@@ -43,3 +43,8 @@ header>.container {
     float: right;
 }
     
+.contact-form label::after {
+    content: "*"; 
+    color: blue;
+    margin-left: 4px; 
+}

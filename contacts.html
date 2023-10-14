@@ -40,11 +40,11 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="serials.html">Սերիալներ</a>
                                 </li>
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#">Վարկանիշ</a>
-                                </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="contacts.html">Կապ մեզ հետ</a>
+                                    <a class="nav-link" href="ratings.html">Վարկանիշ</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Կապ մեզ հետ</a>
                                 </li>
                             </ul>
                         </div>
@@ -56,72 +56,27 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-9 col-12">
-                        <h2>ֆիլմերի վարկանիշ</h2>
-                        <hr>
-                        <div class="table-responsive">
-                            <table class="table table-striped">
-                                <thead>
-                                    <tr>
-                                        <th scope="col"></th>
-                                        <th scope="col">Անվանում</th>
-                                        <th scope="col">Տարեթիվ</th>
-                                        <th scope="col">Վարկանիշ</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <img src="assets/img/joker.jpg">
-                                        </td>
-                                        <td>Joker</td>
-                                        <td>2019</td>
-                                        <td>
-                                            <span class="badge badge-pill badge-primary">9.5</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <img src="assets/img/badboys.jpg">
-                                        </td>
-                                        <td>Bad Boys</td>
-                                        <td>1995</td>
-                                        <td>
-                                            <span class="badge badge-pill badge-primary">9.1</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <img src="assets/img/jumanji.jpg">
-                                        </td>
-                                        <td>Jumanji</td>
-                                        <td>2017</td>
-                                        <td>
-                                            <span class="badge badge-pill badge-primary">8.5</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <img src="assets/img/sonic.jpg">
-                                        </td>
-                                        <td>Sonic</td>
-                                        <td>2020</td>
-                                        <td>
-                                            <span class="badge badge-pill badge-primary">7</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <img src="assets/img/venom.jpg">
-                                        </td>
-                                        <td>Venom</td>
-                                        <td>2018</td>
-                                        <td>
-                                            <span class="badge badge-pill badge-primary">7</span>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                        <h1>Կապ մեզ հետ</h1>
+                        <small>Խնդրում ենք լրացնել բոլոր դաշտերը և սեղմել «Ուղարկել» կոճակը</small>
+                        <div class="mt-5"></div>
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="#name">Ձեր անունը</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="#email">էլ. հասցե</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message"></label>
+                                <textarea name="message" class="form-control" rows="3" id="message" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="file">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Ուղարկել</button>
+                        </form>
                     </div>
                     <div class="col-12 col-md-3">
                         <div class="card margin-top-55">
