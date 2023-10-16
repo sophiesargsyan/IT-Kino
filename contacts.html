@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <!-- Custom CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
-        <!-- Font Awesome CDN -->
+        <!-- Font Awesome CDN --> 
         <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
         <title>IT Kino</title>
@@ -17,8 +17,8 @@
         <header>
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
-                        <h1><a class="navbar-brand" href="#"> IT Kino</a></h1>
+                    <div class="col-12  mt-3">
+                        <h1><a href="#"> IT Kino</a></h1>
                         <p><small>Քո սիրելի ֆիլմերը մեզ մոտ</small></p>
                     </div>
                 </div>
@@ -62,18 +62,18 @@
                         <form class="contact-form">
                             <div class="form-group">
                                 <label for="#name">Ձեր անունը</label>
-                                <input type="text" class="form-control" id="name" required>
+                                <input type="text" name="name" class="form-control" id="name" required>
                             </div>
                             <div class="form-group">
                                 <label for="#email">էլ. հասցե</label>
-                                <input type="email" class="form-control" id="email" required>
+                                <input type="email" name="email" class="form-control" id="email" required>
                             </div>
                             <div class="form-group">
-                                <label for="message"></label>
+                                <label for="message">Կապ մեզ հետ</label>
                                 <textarea name="message" class="form-control" rows="3" id="message" required></textarea>
                             </div>
                             <div class="form-group">
-                                <input type="file">
+                                <input type="file" name="file">
                             </div>
                             <button type="submit" class="btn btn-primary">Ուղարկել</button>
                         </form>
@@ -87,7 +87,7 @@
                                 <form>
                                     <div class="form-group">
                                         <div class="input-group">
-                                            <input type="text" class="form-control" placeholder="ֆիլմի անվանում" name="s" aria-describedby="search-btn">
+                                            <input type="text" class="form-control" placeholder="ֆիլմի անվանում" name="search" aria-describedby="search-btn">
                                             <div class="input-group-append">
                                                 <button class="btn btn-primary" type="submit" id="search-btn">
                                                     <i class="fa fa-search" aria-hidden="true"></i>
@@ -105,10 +105,10 @@
                             <div class="card-body">
                                 <form method="post">
                                     <div class="form-group">
-                                        <input type="email" class="form-control" id="email-input" placeholder="էլ. հասցե">
+                                        <input type="email" name="email" class="form-control" id="email-input" placeholder="էլ. հասցե">
                                     </div>
                                     <div class="form-group">
-                                        <input type="password" class="form-control" id="password-input" placeholder="գաղտնաբառ">
+                                        <input type="password" name="password" class="form-control" id="password-input" placeholder="գաղտնաբառ">
                                     </div>
                                     <button type="submit" class="btn btn-primary">
                                         <i class="fa fa-sign-in" aria-hidden="true"></i>
@@ -151,59 +151,60 @@
         </div>
         <footer class="text-lg-start text-white">
             <div class="container py-4 pb-0">
-                <div class="row">
+                <div class="row justify-content-between">
                     <!-- Grid column -->
-                    <div class=" text-center col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                        <h6 class="text-uppercase mb-4 font-weight-bold">
+                    <div class=" text-center col-md-3 col-lg-3 col-xl-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold">
                             IT Kino
-                        </h6>
+                        </h5>
                         <p class="font-weight-lighter">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra dolor sed est pretium, laoreet finibus risus sollicitudin. Nulla ultricies congue accumsan. 
                         </p>
                     </div>
-                    <div class=" text-center col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                        <h6 class="text-uppercase mb-4 font-weight-bold">Follow us there:</h6>
+                    <div class=" text-center col-md-4 col-lg-3 col-xl-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold">Follow us there:</h5>
                         <!-- Facebook -->
-                        <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!" role="button">
+                        <a href="https://www.facebook.com" class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!" role="button" target="_blank">
                             <i class="fa fa-facebook-square" aria-hidden="true"></i>
                         </a>
                         <!-- Twitter -->
-                        <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!" role="button">
+                        <a href="https://www.twitter.com" class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!" role="button" target="_blank">
                             <i class="fa fa-twitter-square" aria-hidden="true"></i>
                         </a>
                         <!-- Google -->
-                        <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!" role="button">
+                        <a href="https://www.google.com" class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!" role="button" target="_blank">
                             <i class="fa fa-google" aria-hidden="true"></i>
                         </a>
-            
                         <!-- Instagram -->
-                        <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!" role="button">
+                        <a href="https://www.instagram.com" class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!" role="button" target="_blank">
                             <i class="fa fa-instagram" aria-hidden="true"></i>
                         </a>
                     </div>
                     <!-- Grid column -->
-                    <div class=" text-center col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                        <h6 class="text-uppercase mb-4 font-weight-bold">Contacts</h6>
-                        <p>
+                    <div class=" text-center col-md-4 col-lg-3 col-xl-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold">Contacts</h5>
+                        <address class="text-decoration-none m-0">
                             <i class="fa fa-map-marker mr-2" aria-hidden="true"></i> 
                             Address
-                        </p>
-                        <p>
+                        </address>
+                        <a href="mailto:email@example.com" class="text-decoration-none d-block">
                             <i class="fa fa-envelope-o mr-2" aria-hidden="true"></i> 
                             itlezoo@gmail.com
-                        </p>
-                        <p>
+                        </a>
+                        <a href="tel:123456789" class="text-decoration-none d-block">
                             <i class="fa fa-phone mr-2" aria-hidden="true"></i> 
-                            + 01 234 567 88</p>
-                        <p>
+                            + 01 234 567 88
+                        </a>
+                        <a href="tel:123456789" class="text-decoration-none d-block">
                             <i class="fa fa-phone mr-2" aria-hidden="true"></i> 
-                            + 01 234 567 89</p>
+                            + 01 234 567 89
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="text-center font-weight-lighter p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-                © 2020 Copyright:
-                <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+                © 2023 Copyright:
+                <a class="text-white" href="#">Sophie Sargsyan</a>
             </div>
         </footer>
         <!-- Optional JavaScript -->
